@@ -19,3 +19,37 @@ python3 -m pip install --upgrade build twine coverage pylint rope
 ```
 
 Remember to set this virtual environment in VSCode or your favorite IDE as well.
+
+# Unit Testing
+
+To run unit tests at this stage, simply run:
+
+```shell
+python3 -m unittest tests/*.py
+```
+
+# Build and Manual UI Testing
+
+Build with the following command:
+
+```shell
+python3 -m build
+```
+
+The following command will install the new build in a virtual environment in `~/tmp/venv` (*nix only):
+
+```shell
+./test_launcher.sh
+```
+
+In a separate terminal window, you can now test with the following commands:
+
+```shell
+cd ~/tmp
+
+source venv/bin/activate
+
+venv/bin/cloudconsole
+```
+
+
