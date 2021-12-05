@@ -15,7 +15,7 @@ python3 -m venv venv
 
 source venv/bin/activate
 
-python3 -m pip install --upgrade build twine
+python3 -m pip install --upgrade build twine coverage pylint rope
 ```
 
 Remember to set this virtual environment in VSCode or your favorite IDE as well.
