@@ -15,6 +15,14 @@ The aim is not to replace a Web Based console, but to allow at least some simila
         return text
 
 
+def start_ui(exit_on_done: bool=True, return_done: bool=False):
+    print('Starting UI...')
+    if exit_on_done is True:
+        exit(0)
+    if return_done is True:
+        return True
+
+
 if __name__ == '__main__':
     print_about()
 
